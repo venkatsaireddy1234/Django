@@ -2,4 +2,13 @@
 
 {% block content %}
 <p>Welcome to this page, This page is from template and this concept is called {{concept}} </p>
+
+
+<form action="add" method="post" >
+    {% csrf_token %}
+   Enter 1st Number <input type="text" name="number1"> <br>
+   Enter 2nd Number <input type="text" name="number2">
+<input type="submit">
+</form>
+
 {% endblock %}
